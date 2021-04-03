@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>home page</title>
+  </head>
+
+  <body>
+    <div>
+      <h1>Regression Model to predict Cricket Score</h1>
+    </div>
+
+    <div class="div2">
+      <form action="{{ url_for('parameters') }}" method="POST">
+        <!-- Regression Model Dropdown -->
+        <select class="form-input align-center" name="regression-model">
+          <option value="none">--- Select a Regression Model ---</option>
+          <option value="Multiple Regression Model">
+            Multiple Regression Model
+          </option>
+          <option value="Random Forest Regression">
+            Random Forest Regression Model
+          </option></select
+        ><br />
+
+        <input type="submit" class="myButton" value="Choose Model" />
+      </form>
+    </div>
+  </body>
+</html>
